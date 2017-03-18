@@ -1,7 +1,7 @@
 "use strict";
 
 var app = angular.module("Capstone", ['ngRoute'])
-    .constant('apiUrl', 'http://localhost:7000')
+    .constant('apiUrl', 'http://localhost:7000');
 
 angular.module("Capstone").config(
     [
@@ -21,6 +21,6 @@ angular.module("Capstone").config(
                 .when('/home', {
                     controller: "HomeCtrl",
                     templateUrl: 'partials/home.html'
-                })
+                });
         }
 ]);
