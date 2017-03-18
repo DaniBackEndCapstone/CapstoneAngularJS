@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Capstone</title>
+    <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- <base href="/home"> -->
+</head>
+
+<body ng-app="Capstone">
+    <div ng-include="'./partials/navbar.html'"></div>
+
+
+        <div class="all" ng-view></div>
+
+
+
+    <script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="lib/bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+
+    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+
+    <script type="text/javascript" src="app/app.js"></script>
+
+    <script type="text/javascript" src="app/factories/DataFactory.js"></script>
+
+
+    <script type="text/javascript" src="app/controllers/HomeCtrl.js"></script>
+    <script type="text/javascript" src="app/controllers/DataVisualizationCtrl.js"></script>
+    <script type="text/javascript" src="app/controllers/AboutCtrl.js"></script>
+
+    <script type="text/javascript" src="app/factories/DataFactory.js"></script>
+
+    <script type="text/javascript" src="partials/home.html"></script>
+    <script type="text/javascript" src="partials/about.html"></script>
+    <script type="text/javascript" src="partials/datavisualization.html"></script>
+
+</body>
+
+</html>
