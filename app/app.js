@@ -18,9 +18,17 @@ angular.module("Capstone").config(
             $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
 
             $routeProvider
-                .when('/home', {
-                    controller: "HomeCtrl",
-                    templateUrl: 'partials/home.html'
+                .when('/', {
+                    controller: "DataVisualizationCtrl",
+                    templateUrl: 'partials/datavisualization.html'
+                })
+                .when('/about', {
+                    controller: "AboutCtrl",
+                    templateUrl: 'partials/about.html'
+                })
+                .when('/data_visualizations', {
+                    controller: "DataVisualizationCtrl",
+                    templateUrl: 'partials/datavisualization.html'
                 });
         }
 ]);

@@ -13,3 +13,13 @@ body {
 #navThree {
   margin-left: 1em;
 }
+
+div.header {
+  background-color: grey;
+}
+
+div.all {
+  width: 100%;
+  height: 300px;
+  background-color: purple;
+}
