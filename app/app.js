@@ -25,10 +25,10 @@ angular.module("Capstone").config(
                 .when('/about', {
                     controller: "AboutCtrl",
                     templateUrl: 'partials/about.html'
-                })
-                .when('/data_visualizations', {
-                    controller: "DataVisualizationCtrl",
-                    templateUrl: 'partials/datavisualization.html'
+                // })
+                // .when('/data_visualizations', {
+                //     controller: "DataVisualizationCtrl",
+                //     templateUrl: 'partials/datavisualization.html'
                 });
         }
 ]);
