@@ -10,7 +10,8 @@ app.controller('DataVisualizationCtrl', function($scope, $location, $http, DataF
       })
       .then((items)=> {
         console.log("result from state.state_data", items);
-        $scope.timeout();
+        $scope.state_data = items.data.results;
+        // $scope.timeout();
       });
     });
 });
