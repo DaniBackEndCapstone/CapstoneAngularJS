@@ -18,5 +18,9 @@
     "grunt-sass": "^2.0.0",
     "load-grunt-tasks": "^3.5.2",
     "matchdep": "^1.0.1"
+  },
+  "dependencies": {
+    "d3": "^4.7.3",
+    "topojson": "^2.2.0"
   }
 }
