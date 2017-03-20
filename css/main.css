@@ -1,5 +1,17 @@
-body {
-  background-color: grey;
+/*body {
+  background-color: white;
+}*/
+
+.sectionOne {
+  background-color: white;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.sectionTwo {
+  background-color: lightgrey;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 #navOne {
