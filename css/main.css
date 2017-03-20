@@ -8,6 +8,11 @@
   padding-top: 100px;
 }
 
+.center {
+  display: block;
+  margin: auto;
+}
+
 .sectionTwo {
   background-color: lightgrey;
   padding-top: 100px;
@@ -26,6 +31,10 @@
   margin-left: 1em;
 }
 
+.navFour {
+  text-decoration-color: grey;
+}
+
 div.header {
   background-color: grey;
 }
@@ -35,3 +44,35 @@ div.all {
   height: 300px;
   background-color: purple;
 }
+
+/*charts*/
+
+.charts--content {
+  padding: 1%;
+  text-align: center;
+}
+
+.cards-content div.card-content {
+  min-height: 10em;
+}
+
+/*.cards-content .card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em !important;
+  color: #5a7c92;
+  text-transform: uppercase;
+}
+
+.cards-content .numbers {
+  font-size: 3em;
+  line-height: 1.5em;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.data-row {
+  padding: 0;
+  margin: 0;
+}*/

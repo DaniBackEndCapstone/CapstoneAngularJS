@@ -30,9 +30,13 @@ angular.module("Capstone").config(
                     controller: "AboutCtrl",
                     templateUrl: 'partials/about.html'
                 })
-                .when('/datavisualization', {
-                    controller: "DataVisualizationCtrl",
-                    templateUrl: 'partials/datavisualization.html'
+                .when('/correctionspopulation', {
+                    controller: "CorrectionsPopulationCtrl",
+                    templateUrl: 'partials/correctionspopulation.html'
+                })
+                .when('/prisons', {
+                    controller: "PrisonsCtrl",
+                    templateUrl: 'partials/prisons.html'
                 });
         }
 ]);

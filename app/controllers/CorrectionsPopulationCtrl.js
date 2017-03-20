@@ -1,7 +1,7 @@
 "use strict";
 
 
-app.controller('DataVisualizationCtrl', function($scope, $location, $http, DataFactory, $timeout){
+app.controller('CorrectionsPopulationCtrl', function($scope, $location, $http, DataFactory, $timeout){
   DataFactory.getApiRoot()
     .then((state)=> {
       $http({
