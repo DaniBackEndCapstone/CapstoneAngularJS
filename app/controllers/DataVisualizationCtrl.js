@@ -15,3 +15,4 @@ app.controller('DataVisualizationCtrl', function($scope, $location, $http, DataF
       });
     });
 });
+

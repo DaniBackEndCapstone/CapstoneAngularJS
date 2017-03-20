@@ -14,11 +14,12 @@
 </head>
 
 <body ng-app="Capstone">
-    <div ng-include="'./partials/navbar.html'"></div>
+    <div ng-include="'/partials/navbar.html'"></div>
 
 
-        <div class="all" ng-view></div>
-
+    <div class="row">
+        <div class="" ng-view></div>
+    </div>
 
 
     <script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
@@ -31,9 +32,12 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-    <script src="/datamaps.world.min.js"></script>
+    <script src="lib/bower_components/angular-us-map/src/us-map.js"></script>
+
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script> -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script> -->
+    <!-- <script src="/datamaps.world.min.js"></script> -->
 
 
 
@@ -46,7 +50,6 @@
     <script type="text/javascript" src="app/controllers/DataVisualizationCtrl.js"></script>
     <script type="text/javascript" src="app/controllers/AboutCtrl.js"></script>
 
-    <script type="text/javascript" src="app/factories/DataFactory.js"></script>
 
     <!-- <script type="text/javascript" src="partials/home.html"></script> -->
     <!-- <script type="text/javascript" src="partials/about.html"></script> -->
