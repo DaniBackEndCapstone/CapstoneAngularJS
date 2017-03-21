@@ -14,5 +14,27 @@ app.controller('CorrectionsPopulationCtrl', function($scope, $location, $http, D
         // $scope.timeout();
       });
     });
+
+
+
+let getSingleStateData = (id)=> {
+    DataFactory.getApiRoot()
+    .then((state)=>{
+    $http.get(`${state.state_data}${id}/`)
+    .then((stateObject) => {
+      $scope.stateObject = stateObject
+      console.log(stateObject)
+    })
+    .catch((error) => {
+      console.log(error)
+    });
+
+    });
+
+};
+
+getSingleStateData(45)
+
+
 });
 

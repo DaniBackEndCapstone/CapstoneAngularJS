@@ -22,12 +22,8 @@ angular.module("Capstone").config(
                     controller: "HomeCtrl",
                     templateUrl: 'partials/home.html'
                 })
-                .when('/home', {
-                    controller: "HomeCtrl",
-                    templateUrl: 'partials/home.html'
-                })
                 .when('/about', {
-                    controller: "AboutCtrl",
+                    // controller: "AboutCtrl",
                     templateUrl: 'partials/about.html'
                 })
                 .when('/correctionspopulation', {
