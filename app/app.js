@@ -1,6 +1,6 @@
 "use strict";
 
-var app = angular.module("Capstone", ['ngRoute', 'usMap'])
+var app = angular.module("Capstone", ['ngRoute', 'usMap', 'chart.js'])
     .constant('apiUrl', 'http://localhost:7000');
 
 angular.module("Capstone").config(
@@ -23,7 +23,6 @@ angular.module("Capstone").config(
                     templateUrl: 'partials/home.html'
                 })
                 .when('/about', {
-                    // controller: "AboutCtrl",
                     templateUrl: 'partials/about.html'
                 })
                 .when('/correctionspopulation', {

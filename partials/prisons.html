@@ -1,16 +1,46 @@
 <div class="sectionOne">
-    <h5>Total Correction Population By State</h5>
+    <h5>Number of Inmates Housed in Private, Local and Other Jails</h5>
 
-<div ng-controller="PrisonsCtrl as ctrl">
-    <us-map>
-        <!-- <map-data state="CA" color="#345" hover-bg-color="#f5f7fa"> -->
-            <!-- <pre>{{ctrl.data['CA'] | json}}</pre> -->
-        <!-- </map-data> -->
+<div ng-repeat="result in total"></div>
+  <div class="row">
+      <div class="col s12 m5">
+        <div class="card-panel teal">
+          <span class="white-text">Private Prison</span>
+          <p>A private prison or for-profit prison is a place in which individuals are physically confined by a third-party that is contracted by the government.</p>
+          <p>{{result.total}}</p>
+          <p>Number of inmates house in private prisons.</p>
+        </div>
+      </div>
+    </div>
 
-        <!-- <map-data state="WA" color="#f43" hover-bg-color="#white"> -->
-            <!-- <pre>{{ctrl.data['WA'] | json}}</pre> -->
-        <!-- </map-data> -->
-    </us-map>
+    <div ng-repeat="result in total"></div>
+  <div class="row">
+      <div class="col s12 m5">
+        <div class="card-panel teal">
+          <span class="white-text">Local Jails and Prisons</span>
+          <p>A local jail or prison is....</p>
+          <p>{{result.total}}</p>
+          <p>Number of inmates house in local prisons and jails.</p>
+        </div>
+      </div>
+    </div>
+
+<div ng-repeat="result in total"></div>
+  <div class="row">
+      <div class="col s12 m5">
+        <div class="card-panel teal">
+          <span class="white-text">Other Prisons</span>
+          <p>Other prisons include...</p>
+          <p>{{result.total}}</p>
+          <p>Number of inmates house in other prisons.</p>
+        </div>
+      </div>
+    </div>
+
+
+<!-- will need to add $index -->
+
+
 </div>
 <br>
 <br>
