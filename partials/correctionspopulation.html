@@ -1,64 +1,220 @@
-
-<div class="sectionOne">
+<!-- Section 1 Correction Total Pop By State -->
+<div class="section sectionOne">
     <h5>Total Correction Population By State</h5>
-
 <div>
     <us-map>
-        <!-- <map-data state="CA" color="#345" hover-bg-color="#f5f7fa"> -->
-            <!-- <pre>{{ctrl.data['CA'] | json}}</pre> -->
-        <!-- </map-data> -->
-
-        <!-- <map-data state="WA" color="#f43" hover-bg-color="#white"> -->
-            <!-- <pre>{{ctrl.data['WA'] | json}}</pre> -->
-        <!-- </map-data> -->
-    </us-map>
+        <div ng-repeat="result in state_data">
+            <map-data state="AL" class="ten" color="#033B40" ng-if="result.state_or_territory==='Alabama'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="AK" class="ten" color="#033B40" ng-if="result.state_or_territory==='Alaska'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="AZ" class="ten" color="#033B40" ng-if="result.state_or_territory==='Arizona'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="AR" class="ten" color="#033B40" ng-if="result.state_or_territory==='Arkansas'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="CA" class="ten" color="#033B40" ng-if="result.state_or_territory==='California'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="CO" class="ten" color="#033B40" ng-if="result.state_or_territory==='Colorado'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="CT" class="ten" color="#033B40" ng-if="result.state_or_territory==='Connecticut'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="DE" class="ten" color="#033B40" ng-if="result.state_or_territory==='Delaware'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="FL" class="ten" color="#033B40" ng-if="result.state_or_territory==='Florida'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="GA" class="ten" color="#033B40" ng-if="result.state_or_territory==='Georgia'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="HI" class="ten" color="#033B40" ng-if="result.state_or_territory==='Hawaii'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="ID" class="ten" color="#033B40" ng-if="result.state_or_territory==='Idaho'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="IL" class="ten" color="#033B40" ng-if="result.state_or_territory==='Illinois'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="IN" class="ten" color="#033B40" ng-if="result.state_or_territory==='Indiana'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="IA" class="ten" color="#033B40" ng-if="result.state_or_territory==='Iowa'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="KS" class="ten" color="#033B40" ng-if="result.state_or_territory==='Kansas'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="KY" class="ten" color="#033B40" ng-if="result.state_or_territory==='Kentucky'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="LA" class="ten" color="#033B40" ng-if="result.state_or_territory==='Louisiana'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="ME" class="ten" color="#033B40" ng-if="result.state_or_territory==='Maine'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="MD" class="ten" color="#033B40" ng-if="result.state_or_territory==='Maryland'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="MA" class="ten" color="#033B40" ng-if="result.state_or_territory==='Massachusetts'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="MI" class="ten" color="#033B40" ng-if="result.state_or_territory==='Michigan'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="MN" class="ten" color="#033B40" ng-if="result.state_or_territory==='Minnesota'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="MS" class="ten" color="#033B40" ng-if="result.state_or_territory==='Mississippi'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="MO" class="ten" color="#033B40" ng-if="result.state_or_territory==='Missouri'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="MT" class="ten" color="#033B40" ng-if="result.state_or_territory==='Montana'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="NE" class="ten" color="#033B40" ng-if="result.state_or_territory==='Nebraska'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="NV" class="ten" color="#033B40" ng-if="result.state_or_territory==='Nevada'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="NH" class="ten" color="#033B40" ng-if="result.state_or_territory==='New Hampshire'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="NJ" class="ten" color="#033B40" ng-if="result.state_or_territory==='New Jersey'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="NM" class="ten" color="#033B40" ng-if="result.state_or_territory==='New Mexico'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="NY" class="ten" color="#033B40" ng-if="result.state_or_territory==='New York'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="NC" class="ten" color="#033B40" ng-if="result.state_or_territory==='North Carolina'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="ND" class="ten" color="#033B40" ng-if="result.state_or_territory==='North Dakota'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="OH" class="ten" color="#033B40" ng-if="result.state_or_territory==='Ohio'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="OK" class="ten" color="#033B40" ng-if="result.state_or_territory==='Oklahoma'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="OR" class="ten" color="#033B40" ng-if="result.state_or_territory==='Oregon'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="PA" class="ten" color="#033B40" ng-if="result.state_or_territory==='Pennsylvania'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="RI" class="ten" color="#033B40" ng-if="result.state_or_territory==='Rhode Island'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="SC" class="ten" color="#033B40" ng-if="result.state_or_territory==='South Carolina'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="SD" class="ten" color="#033B40" ng-if="result.state_or_territory==='South Dakota'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="TN" class="ten" color="#033B40" ng-if="result.state_or_territory==='Tennessee'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="TX" class="ten" color="#033B40" ng-if="result.state_or_territory==='Texas'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="UT" class="ten" color="#033B40" ng-if="result.state_or_territory==='Utah'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="VT" class="ten" color="#033B40" ng-if="result.state_or_territory==='Vermont'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="VA" class="ten" color="#033B40" ng-if="result.state_or_territory==='Virginia'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="WA" class="ten" color="#033B40" ng-if="result.state_or_territory==='Washington'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="WV" class="ten" color="#033B40" ng-if="result.state_or_territory==='West Virginia'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="WI" class="ten" color="#033B40" ng-if="result.state_or_territory==='Wisconsin'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+            <map-data state="WY" class="ten" color="#033B40" ng-if="result.state_or_territory==='Wyoming'">
+                <p>{{result.state_or_territory}}</p>
+                <p>{{result.total_correction_pop}}</p>
+            </map-data>
+        </div>
+        </us-map>
+    </div>
 </div>
-<br>
-<br>
-</div>
 
+<!-- Cards for section 1 Correction Total Pop By State -->
 <div id="" class='cards-content'>
       <div class="row data-row">
 
-
-<!--
-<div class="row">
-      <div class="col s12 m5 l2">
-        <div class="card card-panel teal">
-          <div class="card-content">
-          <div class="card-title">Percent </div>
-          <div class="numbers">lots</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-      <div class="col s12 m5 l2">
-        <div class="card card-panel teal">
-          <div class="card-content">
-          <div class="card-title">Percentsomething</div>
-          <div class="numbers">lots</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-      <div class="col s12 m5 l2">
-        <div class="card-content card-panel teal">
-          <div class="card-content">
-          <span class="card-title">Percentsomething</span>
-          <span class="numbers">lots</span>
-        </div>
-      </div>
-    </div>
-  </div>
- -->
-
-
     <div class="row">
-      <div class="col s12 m5">
+      <div class="leftColumn col s4 offset-s4 l2 offset-l1">
         <div class="card-panel teal">
           <span class="white-text"> Did you know?</span>
           <span>Per 100,000 residents in the United States, there are 2,080 people in the criminal justice system.</span>
@@ -68,7 +224,7 @@
     </div>
 
     <div class="row">
-      <div class="col s12 m5">
+      <div class="middleColumn col s4 offset-s4 l2 offset-l1">
         <div class="card-panel teal">
           <span class="white-text"> Did you know?</span>
           <span>Per 100,000 residents over the age of 18 in the United States, there are [[[how many peeps]] people in the criminal justice system.</span>
@@ -79,7 +235,7 @@
 
 
     <div class="row">
-      <div class="col s12 m5">
+      <div class="rightColumn col s4 offset-s4 l2 offset-l1">
         <div class="card-panel teal">
           <span class="white-text">Did you know?</span>
           <span>Of those in the criminal justice system, there were [[]] incarcerated.</span>
@@ -91,16 +247,30 @@
 </div>
 
 
+<!-- Section 2 Race & Gender Total Graphs -->
 
-  <div class="sectionTwo">
+<div class="sectionTwo">
     <h5>Race, Gender and Demographics of Persons in Criminal Justice System</h5>
     <p>I will put here race totals, gender totals using graps/datavisualizations</p>
-  </div>
+
+<!-- <div ng-repeat="result in state_data">
+
+    <div chart-label="Incarceration Totals by Gender">
+        <canvas id="doughnut" class="chart chart-doughnut"
+          chart-data="" chart-labels="">
+        </canvas>
+    </div>
+</div> -->
+
+</div>
+
+<!-- Noncitizen Totals Data - could do cards with most and least instead of map so as to not have 300 maps -->
 
  <div class="sectionOne">
     <h5>Noncitizen Prisoners by State</h5>
     <div>
-    <us-map>
+
+    <!-- <us-map> -->
         <!-- <map-data state="CA" color="#345" hover-bg-color="#f5f7fa"> -->
             <!-- <pre>{{ctrl.data['CA'] | json}}</pre> -->
         <!-- </map-data> -->
@@ -108,7 +278,7 @@
         <!-- <map-data state="WA" color="#f43" hover-bg-color="#white"> -->
             <!-- <pre>{{ctrl.data['WA'] | json}}</pre> -->
         <!-- </map-data> -->
-    </us-map>
+    <!-- </us-map> -->
 </div>
 <br>
 <br>
@@ -118,8 +288,3 @@
     <h5>Minors in CJS</h5>
     <p>Information for minors in CJS -- no map</p>
   </div>
-
-
-
-
-

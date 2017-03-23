@@ -8,22 +8,70 @@
 
 .sectionOne {
   background-color: white;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  /*padding-bottom: 100px;*/
+  /*padding-top: 20px;*/
   font-family: 'Open Sans', sans-serif;
+}
+
+.sectionTwo {
+  background-color: lightgrey;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.quote {
+  padding: 0 350px 0 350px;
+}
+
+.bqstart {
+  float: left;
+  height: 45px;
+  margin-top: -30px;
+  padding-top: 45px;
+  margin-bottom: -50px;
+  font-size: 700%;
+  color: #FF0000;
+  padding-left: 340px;
+ }
+
+ .bqend {
+  float: right;
+  height: 25px;
+  margin-top: 0px;
+  /*padding-top: 5px;*/
+  font-size: 700%;
+  color: #FF0000;
+  padding-right: 340px;
+ }
+
+.left {
+  text-align: left;
+  padding: 0px 200px 0 200px ;
 }
 
 .center {
   display: block;
   margin: auto;
+  /*padding: 0 100px 0 100px;*/
 }
 
-.sectionTwo {
-  background-color: lightgrey;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  font-family: 'Open Sans', sans-serif;
+.leftColumn {
+  float:left;
+  width:34%;
+  /*background: red; */
+}
 
+.middleColumn {
+  float:left;
+  width:33%;
+  /*background: green; */
+}
+
+.rightColumn {
+  float:left;
+  width:33%;
+  /*background: yellow; */
 }
 
 #navOne {
@@ -56,7 +104,8 @@ div.all {
 
 .ten {
   background-color: white;
-  color: purple;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
   padding: 10px;
   border-radius: 12px;
 }

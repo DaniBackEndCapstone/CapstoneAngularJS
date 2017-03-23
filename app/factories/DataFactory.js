@@ -7,7 +7,7 @@ app.factory('DataFactory', [
     return {
       getApiRoot () {
         return $http({
-          url: apiUrl,
+          url: 'http://localhost:7000/state_data/',
         }).then(res => res.data);
       }
     };

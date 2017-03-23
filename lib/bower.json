@@ -21,7 +21,8 @@
     "ng-file-model": "*",
     "ng-file-upload-shim": "^12.2.13",
     "ng-file-upload": "^12.2.13",
-    "angular-us-map": "^1.0.0"
+    "angular-us-map": "^1.0.0",
+    "chart.js": "^2.5.0"
   },
   "resolutions": {
     "angular": "1.5.9"
