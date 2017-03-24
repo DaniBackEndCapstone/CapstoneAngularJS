@@ -4,35 +4,23 @@
 app.controller('CorrectionsPopulationCtrl', function($scope, $location, $http, DataFactory, $timeout){
   DataFactory.getApiRoot()
     .then((state)=> {
-      // $http({
-        // url: `${state.state_data}`,
-        // method: 'GET',
-      // })
-      // .then((items)=> {
         console.log("result from state", state);
         $scope.state_data = state;
         console.log("stateSTUFF!", state[6])
-
         $timeout();
 
-    $scope.genderInfo = [];
-    $scope.genderTotals = [];
-    $scope.raceInfo = [];
-    $scope.raceTotals = [];
-    $scope.minorInfo = [];
-    $scope.noncitizenInfo = [];
-
-
-    var noncitizen = function() {
-        federal_total = state[6].total_noncitizen
-        state_total = state[7].total_noncitizen
-        console.log(state_total)
-      }
+//graphs
+    $scope.genderInfo = ["Male", "Female"];
+    $scope.genderTotals = [1978700, 201200];
+    $scope.raceInfo = ["White", "Black", "Hispanic", "American Indian/Alaska Native", "Asian", "Native Hawaiian Pacific Islander", "Two or More", "Other", "Unknown"];
+    $scope.raceTotals = [582043, 604723, 264056, 22193, 9703, 3312, 410, 8791, 2485];
 
   });
 
 });
 
+//loop through data and push it into an array and then make sure the labels have the same index as the data in the data array
+//loop it in the js page and then output
 
 
 // //angular directives for map doughnut graph
@@ -41,25 +29,6 @@ app.controller('CorrectionsPopulationCtrl', function($scope, $location, $http, D
 // //   $scope.labels = ["Download Sales", "In-Store Sales", "Mail-Order Sales"];
 // //   $scope.data = [300, 500, 100];
 // // });
-
-
-
-// let get
-
-
-
-
-
-
-
-// let makeChartRun = ($scope) => {
-// $scope.$on('chart-create', function (evt, chart) {
-//   console.log(chart);
-// });
-
-
-// //chart
-
 
 
 //  //First, retrieve all software Active Users, Sales Rep email addresses, and currently logged in user's Domains
