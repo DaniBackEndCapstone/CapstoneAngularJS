@@ -210,81 +210,96 @@
 </div>
 
 <!-- Cards for section 1 Correction Total Pop By State -->
-<div id="" class='cards-content'>
-      <div class="row data-row">
-
-    <div class="row">
+<!-- <div id="" class='cards-content'>
+      <div class="row data-row"> -->
+ <div ng-repeat="result in state_data">
+    <div ng-if="result.state_or_territory==='US Total'">
+      <div class="row">
       <div class="leftColumn col s4 offset-s4 l2 offset-l1">
-        <div class="card-panel teal">
-          <span class="white-text"> Did you know?</span>
-          <span>Per 100,000 residents in the United States, there are 2,080 people in the criminal justice system.</span>
-          <span>That's over 2% of the U.S. population!</span>
+            <div class="card-panel teal">
+              <span class="white-text"> Did you know?</span>
+              <span>Per 100,000 residents in the United States, there are {{result.total_correction_pop_per_one_hundred_thou_residents_all}} people in the criminal justice system.</span>
+              <span>That's over 2% of the U.S. population!</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="row">
+
+    <!-- <div class="row"> -->
       <div class="middleColumn col s4 offset-s4 l2 offset-l1">
         <div class="card-panel teal">
           <span class="white-text"> Did you know?</span>
-          <span>Per 100,000 residents over the age of 18 in the United States, there are [[[how many peeps]] people in the criminal justice system.</span>
-          <span>That's a lot of people in prison, yo.</span>
+          <span>In 2015, there were {{result.total_correction_pop}} people in the total corrections population.</span>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
 
 
-    <div class="row">
+    <!-- <div class="row"> -->
       <div class="rightColumn col s4 offset-s4 l2 offset-l1">
         <div class="card-panel teal">
           <span class="white-text">Did you know?</span>
-          <span>Of those in the criminal justice system, there were [[]] incarcerated.</span>
+          <span>Of those in the total corrections population, there were {{result.total_pop_incarcerated}} incarcerated.</span>
         </div>
       </div>
-    </div>
-
-  </div>
-</div>
+    <!-- </div> -->
 
 
 <!-- Section 2 Race & Gender Total Graphs -->
 
 <div class="sectionTwo">
     <h5>Race, Gender and Demographics of Persons in Criminal Justice System</h5>
-    <p>I will put here race totals, gender totals using graps/datavisualizations</p>
 
-<!-- <div ng-repeat="result in state_data">
-
+<!-- <div ng-repeat="result in state_data"> -->
+<div class="row">
+<div class="col s6 offset-s3">
     <div chart-label="Incarceration Totals by Gender">
         <canvas id="doughnut" class="chart chart-doughnut"
-          chart-data="" chart-labels="">
+          chart-data="genderTotals" chart-labels="genderInfo">
         </canvas>
     </div>
-</div> -->
-
+</div>
 </div>
 
+<div class="row">
+<div class="col s6 offset-s3">
+<div chart-label>
+<canvas id="pie" class="chart chart-pie"
+  chart-data="data" chart-labels="labels" chart-options="options">
+</canvas>
+</div>
+</div>
+</div>
 <!-- Noncitizen Totals Data - could do cards with most and least instead of map so as to not have 300 maps -->
 
  <div class="sectionOne">
-    <h5>Noncitizen Prisoners by State</h5>
+    <h5>Total Noncitizen Prisoners</h5>
     <div>
 
-    <!-- <us-map> -->
-        <!-- <map-data state="CA" color="#345" hover-bg-color="#f5f7fa"> -->
-            <!-- <pre>{{ctrl.data['CA'] | json}}</pre> -->
-        <!-- </map-data> -->
-
-        <!-- <map-data state="WA" color="#f43" hover-bg-color="#white"> -->
-            <!-- <pre>{{ctrl.data['WA'] | json}}</pre> -->
-        <!-- </map-data> -->
-    <!-- </us-map> -->
+  <div class="row">
+      <div class="col s12 m5">
+        <div class="card-panel teal">
+          <span>{{result.total_noncitizen}}</span>
+          <br>
+          <p>number of noncitizen prisoners in the criminal justice system in 2015</p>
+        </div>
+      </div>
+    </div>
 </div>
 <br>
 <br>
-  </div>
+</div>
 
-   <div class="sectionTwo">
-    <h5>Minors in CJS</h5>
-    <p>Information for minors in CJS -- no map</p>
+  <div class="sectionTwo">
+    <h5>Total Minors</h5>
+    <div class="row">
+      <div class="col s12 m5">
+        <div class="card-panel transparent">
+          <p>{{result.total_minor}}</p>
+          <p>number of minors in the criminal justice system in 2015</p>
+        </div>
+      </div>
+    </div>
   </div>
+ </div>
+</div>
