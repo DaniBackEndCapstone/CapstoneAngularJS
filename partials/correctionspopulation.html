@@ -215,20 +215,17 @@
 </div>
 </div>
 </div>
-
 <div>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
 </div>
 <!-- Cards for section 1 Correction Total Pop By State -->
-<!-- <div id="" class='cards-content'>
-      <div class="row data-row"> -->
  <div ng-repeat="result in state_data">
     <div ng-if="result.state_or_territory==='US Total'">
       <div class="row">
-        <div class="col s3">
-            <div class="hoverable card-panel teal">
+        <div class="col s3 offset-s1">
+            <div class="hoverable card-panel cyan darken-3">
               <span class="white-text"> Did you know?</span>
               <span>Per 100,000 residents in the United States, there are {{result.total_correction_pop_per_one_hundred_thou_residents_all}} people in the criminal justice system.</span>
               <span>That's over 2% of the U.S. population!</span>
@@ -236,87 +233,88 @@
           </div>
 
       <div class="col s3">
-        <div class="hoverable card-panel teal">
+        <div class="hoverable card-panel cyan darken-3">
           <span class="white-text"> Did you know?</span>
           <span>In 2015, there were {{result.total_correction_pop}} people in the total corrections population.</span>
         </div>
       </div>
 
       <div class="col s3">
-        <div class="hoverable card-panel teal">
+        <div class="hoverable card-panel cyan darken-3">
           <span class="white-text">Did you know?</span>
           <span>Of those in the total corrections population, there were {{result.total_pop_incarcerated}} incarcerated.</span>
         </div>
       </div>
       </div>
-
-
+      <br>
+      <br>
+      <br>
 <!-- Section 2 Race & Gender Total Graphs -->
-
 <div class="sectionTwo">
 <div class="container">
-    <h3 class="center-align">Race, Gender and Demographics of Persons in Criminal Justice System</h3>
+    <h4 class="center-align">Race and Gender of Incarcerated Persons 2015</h4>
     <br>
     <br>
     <br>
-
-<!-- <div ng-repeat="result in state_data"> -->
 <div class="row">
 <div class="col s5">
-<!-- <div>Total Incarcerated by Gender 2015</div> -->
+<h6 class="center-align">Doughnut Chart By Gender</h6>
+<br>
+<br>
     <div chart-label="Incarceration Totals by Gender">
         <canvas id="doughnut" class="chart chart-doughnut"
           chart-data="genderTotals" chart-labels="genderInfo">
         </canvas>
     </div>
 </div>
-
-<div class="col s5">
-<!-- <div>Total Incarcerated by Race 2015</div> -->
+<div class="col s5 offset-s1">
+<h6 class="center-align">Pie Chart By Race</h6>
+<br>
+<br>
 <div chart-label="Incarceration Totals by Race">
-<canvas id="pie" class="chart chart-pie"
-  chart-data="raceInfo" chart-labels="raceTotals" chart-options="options">
-</canvas>
+    <canvas id="pie" class="chart chart-pie"
+    chart-data="raceTotals" chart-labels="raceInfo">
+    </canvas>
 </div>
 </div>
 </div>
 </div>
 </div>
 <!-- Noncitizen Totals Data - could do cards with most and least instead of map so as to not have 300 maps -->
-
  <div class="sectionOne">
  <div class="container">
     <h3 class="center-align">Total Noncitizen Prisoners 2015</h3>
+    <br>
+    <br>
     <div class="row">
-      <div class="col s7">
-        <div class="hoverable card-panel teal">
+      <div class="col s6 offset-s3">
+        <div class="hoverable card-panel transparent">
           <h1 class="center-align">{{result.total_noncitizen}}</h1>
           <h6 class="center-align">number of noncitizen prisoners in</h6>
           <h6 class="center-align">the criminal justice system in 2015</h6>
         </div>
       </div>
     </div>
-<br>
-<br>
+    <br>
+    <br>
 </div>
 </div>
-
   <div class="sectionTwo">
   <div class="container">
     <h3 class="center-align">Total Minor Prisoners 2015</h3>
+    <br>
+    <br>
     <div class="row">
-      <div class="col s7">
-        <div class="hoverable card-panel transparent">
+      <div class="col s6 offset-s3">
+        <div class="hoverable card-panel cyan darken-3">
           <h1 class="center-align">{{result.total_minor}}</h1>
-          <h5 class="center-align">number of minors in the criminal</h5>
-          <h5 class="center-align">justice system in 2015</h5>
+          <h6 class="center-align">number of minors in the criminal</h6>
+          <h6 class="center-align">justice system in 2015</h6>
         </div>
       </div>
     </div>
   </div>
  </div>
-
  </div>
 </div>
 </div>
-<!-- </div> -->

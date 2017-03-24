@@ -1,14 +1,11 @@
 <div class="container">
-
-
 <div class="sectionOne">
-
   <div class="col s8"></div>
-
-<br>
-<br>
-<br>
-    <h3 class="center-align">Number of Inmates Housed in Private, Local and Other Jails & Prisons</h3>
+    <br>
+    <br>
+    <br>
+    <h3 class="center-align">Number of Inmates Housed in Private,</h3>
+    <h3 class="center-align"> Local and Other Jails & Prisons</h3>
     <br>
     <br>
     <br>
@@ -16,35 +13,31 @@
     <br>
 </div>
 </div>
-
 <div ng-repeat="result in state_data">
     <div ng-if="result.state_or_territory==='US Total'">
       <div class="row">
           <div class="col s4">
-            <div class="hoverable card-panel teal">
+            <div class="hoverable card-panel cyan darken-3">
               <h6 class="white-text center-align">Private Prison</h6>
               <br>
               <p>A private prison or for-profit prison is a place in which individuals are physically confined by a third-party that is contracted by the government.</p>
               <h1 class="center-align">{{result.total_private}}</h1>
-              <h6 class="center-align">number of inmates in private prisons in year 2015</h6>
+              <h6 class="center-align">number of inmates in private</h6>
+              <h6 class="center-align">prisons in year 2015</h6>
             </div>
           </div>
-
-  <!-- <div class="row"> -->
       <div class="col s4">
-        <div class="hoverable card-panel teal">
+        <div class="hoverable card-panel cyan darken-3">
           <h6 class="center-align white-text">Local Jails</h6>
           <br>
           <p>Typically, a local jail is a jail for inmates who will serve sentences less than one year and are usually run by local law enforcement.</p>
           <h1 class="center-align">{{result.total_local_jail}}</h1>
-          <h6 class="center-align">number of inmates in local jails in year 2015</h6>
+          <h6 class="center-align">number of inmates in local</h6>
+          <h6 class="center-align">jails in year 2015</h6>
         </div>
       </div>
-    <!-- </div> -->
-
-  <!-- <div class="row"> -->
       <div class="col s4">
-        <div class="hoverable card-panel teal">
+        <div class="hoverable card-panel cyan darken-3">
           <h6 class="center-align white-text">Other Prisons</h6>
           <br>
           <p>Other prisons include territorial prisons, military facilities and jails in Indian country. These are typically run by their respective jurisdictions.</p>
@@ -53,7 +46,6 @@
           <h6 class="center-align">prisons in year 2015</h6>
         </div>
       </div>
-    <!-- </div> -->
   </div>
 </div>
 </div>
