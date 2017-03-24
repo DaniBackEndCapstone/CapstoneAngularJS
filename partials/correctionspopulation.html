@@ -1,5 +1,8 @@
 <!-- Section 1 Correction Total Pop By State -->
 <div class="section sectionOne">
+<div class="container">
+ <div class="row">
+  <div class="col s12">
     <h5>Total Correction Population By State</h5>
 <div>
     <us-map>
@@ -208,6 +211,8 @@
         </us-map>
     </div>
 </div>
+</div>
+</div>
 
 <!-- Cards for section 1 Correction Total Pop By State -->
 <!-- <div id="" class='cards-content'>
@@ -215,8 +220,8 @@
  <div ng-repeat="result in state_data">
     <div ng-if="result.state_or_territory==='US Total'">
       <div class="row">
-      <div class="leftColumn col s4 offset-s4 l2 offset-l1">
-            <div class="card-panel teal">
+        <div class="col s3">
+            <div class="hoverable card-panel teal">
               <span class="white-text"> Did you know?</span>
               <span>Per 100,000 residents in the United States, there are {{result.total_correction_pop_per_one_hundred_thou_residents_all}} people in the criminal justice system.</span>
               <span>That's over 2% of the U.S. population!</span>
@@ -224,35 +229,30 @@
           </div>
         </div>
 
-
-    <!-- <div class="row"> -->
-      <div class="middleColumn col s4 offset-s4 l2 offset-l1">
-        <div class="card-panel teal">
+      <div class="col s3">
+        <div class="hoverable card-panel teal">
           <span class="white-text"> Did you know?</span>
           <span>In 2015, there were {{result.total_correction_pop}} people in the total corrections population.</span>
         </div>
       </div>
-    <!-- </div> -->
 
-
-    <!-- <div class="row"> -->
-      <div class="rightColumn col s4 offset-s4 l2 offset-l1">
-        <div class="card-panel teal">
+      <div class="col s3">
+        <div class="hoverable card-panel teal">
           <span class="white-text">Did you know?</span>
           <span>Of those in the total corrections population, there were {{result.total_pop_incarcerated}} incarcerated.</span>
         </div>
       </div>
-    <!-- </div> -->
 
 
 <!-- Section 2 Race & Gender Total Graphs -->
 
 <div class="sectionTwo">
+<div class="container">
     <h5>Race, Gender and Demographics of Persons in Criminal Justice System</h5>
 
 <!-- <div ng-repeat="result in state_data"> -->
 <div class="row">
-<div class="col s6 offset-s3">
+<div class="col s5">
     <div chart-label="Incarceration Totals by Gender">
         <canvas id="doughnut" class="chart chart-doughnut"
           chart-data="genderTotals" chart-labels="genderInfo">
@@ -261,36 +261,37 @@
 </div>
 </div>
 
-<div class="row">
-<div class="col s6 offset-s3">
+<div class="col s5 offset-s3">
 <div chart-label>
 <canvas id="pie" class="chart chart-pie"
-  chart-data="data" chart-labels="labels" chart-options="options">
+  chart-data="raceInfo" chart-labels="raceTotals" chart-options="options">
 </canvas>
+</div>
 </div>
 </div>
 </div>
 <!-- Noncitizen Totals Data - could do cards with most and least instead of map so as to not have 300 maps -->
 
  <div class="sectionOne">
+ <div class="container">
     <h5>Total Noncitizen Prisoners</h5>
-    <div>
 
   <div class="row">
       <div class="col s12 m5">
         <div class="card-panel teal">
           <span>{{result.total_noncitizen}}</span>
           <br>
-          <p>number of noncitizen prisoners in the criminal justice system in 2015</p>
+          <h6 class="center-align">number of noncitizen prisoners in the criminal justice system in 2015</h6>
         </div>
       </div>
     </div>
+<br>
+<br>
 </div>
-<br>
-<br>
 </div>
 
   <div class="sectionTwo">
+  <div class="container">
     <h5>Total Minors</h5>
     <div class="row">
       <div class="col s12 m5">
@@ -302,4 +303,6 @@
     </div>
   </div>
  </div>
+ </div>
 </div>
+<!-- </div> -->
