@@ -3,7 +3,9 @@
 <div class="container">
  <div class="row">
   <div class="col s12">
-    <h5>Total Correction Population By State</h5>
+    <h3 class="center-align">Total Correction Population By State</h3>
+    <br>
+    <br>
 <div>
     <us-map>
         <div ng-repeat="result in state_data">
@@ -214,6 +216,11 @@
 </div>
 </div>
 
+<div>
+<br>
+<br>
+<br>
+</div>
 <!-- Cards for section 1 Correction Total Pop By State -->
 <!-- <div id="" class='cards-content'>
       <div class="row data-row"> -->
@@ -242,30 +249,30 @@
         </div>
       </div>
       </div>
-      </div>
-      </div>
 
 
 <!-- Section 2 Race & Gender Total Graphs -->
 
 <div class="sectionTwo">
 <div class="container">
-    <h5>Race, Gender and Demographics of Persons in Criminal Justice System</h5>
+    <h3 class="center-align">Race, Gender and Demographics of Persons in Criminal Justice System</h3>
+    <br>
+    <br>
+    <br>
 
 <!-- <div ng-repeat="result in state_data"> -->
 <div class="row">
 <div class="col s5">
-<div>Total Incarcerated by Gender 2015</div>
+<!-- <div>Total Incarcerated by Gender 2015</div> -->
     <div chart-label="Incarceration Totals by Gender">
         <canvas id="doughnut" class="chart chart-doughnut"
           chart-data="genderTotals" chart-labels="genderInfo">
         </canvas>
     </div>
 </div>
-</div>
 
-<div class="col s5 offset-s3">
-<div>Total Incarcerated by Race 2015</div>
+<div class="col s5">
+<!-- <div>Total Incarcerated by Race 2015</div> -->
 <div chart-label="Incarceration Totals by Race">
 <canvas id="pie" class="chart chart-pie"
   chart-data="raceInfo" chart-labels="raceTotals" chart-options="options">
@@ -274,18 +281,18 @@
 </div>
 </div>
 </div>
+</div>
 <!-- Noncitizen Totals Data - could do cards with most and least instead of map so as to not have 300 maps -->
 
  <div class="sectionOne">
  <div class="container">
-    <h5>Total Noncitizen Prisoners</h5>
-
-  <div class="row">
-      <div class="col s12 m5">
-        <div class="card-panel teal">
-          <span>{{result.total_noncitizen}}</span>
-          <br>
-          <h6 class="center-align">number of noncitizen prisoners in the criminal justice system in 2015</h6>
+    <h3 class="center-align">Total Noncitizen Prisoners 2015</h3>
+    <div class="row">
+      <div class="col s7">
+        <div class="hoverable card-panel teal">
+          <h1 class="center-align">{{result.total_noncitizen}}</h1>
+          <h6 class="center-align">number of noncitizen prisoners in</h6>
+          <h6 class="center-align">the criminal justice system in 2015</h6>
         </div>
       </div>
     </div>
@@ -296,17 +303,19 @@
 
   <div class="sectionTwo">
   <div class="container">
-    <h5>Total Minors</h5>
+    <h3 class="center-align">Total Minor Prisoners 2015</h3>
     <div class="row">
-      <div class="col s12 m5">
-        <div class="card-panel transparent">
-          <p>{{result.total_minor}}</p>
-          <p>number of minors in the criminal justice system in 2015</p>
+      <div class="col s7">
+        <div class="hoverable card-panel transparent">
+          <h1 class="center-align">{{result.total_minor}}</h1>
+          <h5 class="center-align">number of minors in the criminal</h5>
+          <h5 class="center-align">justice system in 2015</h5>
         </div>
       </div>
     </div>
   </div>
  </div>
+
  </div>
 </div>
 </div>
